@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "find-your-balance-backend"
+version = "0.1.0"
+description = "FastAPI backend for Find Your Balance application"
+authors = ["AI Assistant <assistant@example.com>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.0"
+uvicorn = {extras = ["standard"], version = "^0.30.0"}
+sqlalchemy = "^2.0.30"
+sqlalchemy-utils = "^0.41.2"
+asyncpg = "^0.29.0"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-jose = "^3.3.0"
+pydantic-settings = "^2.2.1"
+httpx = "^0.27.0"
+redis = "^5.0.4"
+fastapi-users = "^12.1.0"
+itsdangerous = "^2.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+pytest-asyncio = "^0.23.6"
+ruff = "^0.4.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

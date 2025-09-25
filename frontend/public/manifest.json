@@ -1,0 +1,9 @@
+{
+  "name": "Find Your Balance",
+  "short_name": "FYB",
+  "display": "standalone",
+  "start_url": "/",
+  "background_color": "#050714",
+  "theme_color": "#22d3ee",
+  "icons": []
+}
